@@ -5,28 +5,37 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       padding: 20,
-      // alignItems: 'center',
-      // justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
       paddingBottom: 500,
-      marginTop: 20
+      marginTop: 100
+
     },
     button: {
+      width: 300,
+      height: 50,
       backgroundColor: 'lightgreen',
-      paddingVertical: 15,
-      paddingHorizontal: 30,
-      borderRadius: 5,
-      marginBottom: 50
+      paddingVertical: 10,
+      paddingHorizontal: 10,
+      borderRadius: 700,
+      //borderWidth: 2,
+      marginBottom: 50,
+      alignSelf: 'center'
     },
     box: {
-      width: 300,
-      height: 100,
+      width: 100,
+      height: 50,
+      position: 'relative',
+      top: 1,
+      right: 10,
       backgroundColor: 'white',
-      padding: 30,
-      margin: 10,
+      padding: 3,
+      margin: 5,
       borderRadius: 700,
-      borderWidth: 2,
-      borderColor: "green",
-      alignItems: "center"
+      //borderWidth: 2,
+      //borderColor: "green",
+      alignItems: 'center',
+      //alignSelf: 'flex-end'
     },
     alarmTimeBox: {
         // width: 300,
@@ -43,8 +52,8 @@ const styles = StyleSheet.create({
     {
       // padding: 80,
       fontWeight: "bold",
-      fontSize: 30,
-      color: "green"
+      fontSize: 15,
+      color: "black"
   
   
     }
@@ -61,7 +70,7 @@ const textStyles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 25,
     textAlign: 'center',
   },
   timeText: {
