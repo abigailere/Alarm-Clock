@@ -20,16 +20,16 @@ export default function App() {
   }, []);
 
   return (
-    <ScrollView style={styles.container}>
-
-
-      <Text style={{ ...textStyles.titleText, padding: 20, paddingTop: 100 }}>Alarm Clock</Text>
-      <View style={styles.box}>
-
+    <ScrollView style={styles.container}> 
+     <View style={styles.box}> 
         <Text style={styles.time}>{currentTime.toLocaleTimeString()}</Text>
       </View>
+      <Text style={{ ...textStyles.titleText, padding: 20, paddingTop: 10}}>Alarm Clock</Text>
+      
+      <AlarmClock style={{marginTop: 100, padding: 100, paddingTop: 100 }}/>
+    
       <TouchableOpacity onPress={() => setShowWow(!showWow)} style={styles.button}>
-        <Text style={textStyles.buttonText}>Button</Text>
+        <Text style={textStyles.buttonText}>Reset</Text>
       </TouchableOpacity>
     
 
